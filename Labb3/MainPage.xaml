@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="Labb3.MainPage">
+    <StackLayout Orientation="Vertical"
+                 Margin="30">
+
+        <Label Text="Inmatat Belopp:"
+                HorizontalOptions="Center"
+               />
+         <Label Text="0 SEK"
+                HorizontalOptions="Center"
+                x:Name="enterdAmountLabel"
+                VerticalOptions="FillAndExpand"/>
+
+         <Label Text="Momssats:"
+                HorizontalOptions="Center"
+               />
+         <Label Text="0%"
+                HorizontalOptions="Center"
+                x:Name="rateLabel"
+                VerticalOptions="FillAndExpand"
+               />
+
+         <Label Text="Uträknat Belopp:"
+                HorizontalOptions="Center"
+               />
+         <Label Text="0 SEK"
+                HorizontalOptions="Center"
+                x:Name="calculatedAmountLabel"
+                VerticalOptions="FillAndExpand"
+               />
+
+        <Label Text="Uträknad Moms:"
+                HorizontalOptions="Center"
+               />
+         <Label Text="0 SEK"
+                HorizontalOptions="Center"
+                x:Name="outputAmountntLabel"
+               />
+        <Entry Placeholder="Skriv ett belopp inklusive moms"
+               x:Name="input"
+               Keyboard="Numeric"
+               />
+
+        <Button Text="8%"
+                Clicked="CalculateButton"
+                TextColor="Blue"
+                BackgroundColor="Transparent"
+                />
+        <Button Text="12%"
+                Clicked="CalculateButton"
+                TextColor="Blue"
+                BackgroundColor="Transparent"
+                />
+        <Button Text="25%"
+                Clicked="CalculateButton"
+                TextColor="Blue"
+                BackgroundColor="Transparent"
+                />
+    </StackLayout>
+</ContentPage>
